@@ -1,0 +1,30 @@
+:root {
+  --vt-c-black: #181818;
+
+  --vt-c-text-light-1: #c8a4f4;
+  --vt-c-text-dark-1: #000000;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #ffffff;
+    --color-border: #000000;
+    --color-text: #000000;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  line-height: 1.6;
+  font-family: Roboto, sans-serif;
+}
